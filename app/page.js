@@ -13,9 +13,11 @@ import  * as THREE from 'three';
 
 function ModelMug(props) {
     const { nodes, materials } = useGLTF('/mug/scene.gltf')
-    const newMaterialURL = "/mug/fondotaza.jpg"; // Replace this with your new URL
-
-      
+    /*
+    // Replace the URL with your new texture
+    // example URL is located in /public/mug/canvas_export.jpg
+    // you should replace this with your own URL in another location
+    const newMaterialURL = "URLTOREPLACE"; // Replace this with your new URL
     // Create a new texture loader
     const loader = new TextureLoader();
 
@@ -27,6 +29,7 @@ function ModelMug(props) {
       texture.flipY = false;
       
     });
+    */
     return (
       <group {...props} dispose={null}>
       <group scale={0.01}>
